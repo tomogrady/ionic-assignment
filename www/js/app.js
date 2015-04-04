@@ -1,5 +1,5 @@
 angular.module('calorific', ['ionic'])
-angular.module('todo', ['ionic'])
+ 
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
