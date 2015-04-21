@@ -14,19 +14,20 @@
  
   </head>
   <body ng-app="calorific">
-
-	<ion-nav-view>
+   
+		<ion-nav-view>
 		 <ion-tabs>
 	 
 		<ion-tab title="Breakfast">
 			<ion-view>
-	 
+	   
 				<h1> 
 				Calories consumed for Breakfast
+				 
 				</h1>
 				<div class="item item-button-left">
 				Breakfast
-				<button class="button button-royal">
+				<button class="button button-royal" href= {{700*3}}</a>
 				  <i class="icon ion-edit"></i>
 				</button>
 			  </div>
@@ -39,7 +40,7 @@
 				Calories consumed for Snack
 				</h1>
 				<div class="item item-button-left">
-				Snack
+				Snack 
 				<button class="button button-royal">
 				  <i class="icon ion-edit"></i>
 				</button>
@@ -81,7 +82,10 @@
 
 		</ion-tabs>
 	
-	</ion-nav-view>
+	</ion-nav-view><div ng-controller="Main">
+  <input type="text" ng-model="rootFolders">
+</div>
+	
 	
   </body>
 			 
