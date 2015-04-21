@@ -27,9 +27,12 @@
 				</h1>
 				<div class="item item-button-left">
 				Breakfast
-				<button class="button button-royal" href= {{700*3}}</a>
+				<button class="button button-royal"ng-click="Breakfast = Breakfast + 10" ng-init="count=0">
 				  <i class="icon ion-edit"></i>
-				</button>
+				  </button>
+				</but<span>
+                  Calories =: {{Breakfast}}
+                 </span> 
 			  </div>
 			  <img src="img/bk.jpg" width="600" height="475"></img>
 			</ion-view>
@@ -43,9 +46,9 @@
 				Snack 
 				<button class="button button-royal"ng-click="Snack = Snack + 10" ng-init="count=0">
 				  <i class="icon ion-edit"></i>
-				  
+				  </button>
 				</but<span>
-                  Snack: {{Snack}}
+                  Calories =: {{Snack}}
                  </span> 
 			  </div>
 			  <img src="img/sn.jpg " width="600" height="475"></img>
@@ -60,9 +63,12 @@
 				</h1>
 				<div class="item item-button-left">
 				Lunch
-				<button class="button button-royal">
+				<button class="button button-royal"ng-click="Lunch = Lunch + 10" ng-init="count=0">
 				  <i class="icon ion-edit"></i>
-				</button>
+				  </button>
+				</but<span>
+                  Calories =: {{Lunch}}
+                 </span>
 			  </div>
 			  <img src="img/ln.jpg " width="600g" height="475"></img>
 			</ion-view>
@@ -75,9 +81,12 @@
 				</h1>
 				<div class="item item-button-left">
 				Dinner
-				<button class="button button-royal">
+				<button class="button button-royal"ng-click="Dinner = Dinner + 10" ng-init="count=0">
 				  <i class="icon ion-edit"></i>
-				</button>
+				  </button>
+				</but<span>
+                  Calories =: {{Dinner}}
+                 </span>
 			  </div>
 			  <img src="img/dr.jpg "width="600" height="475"></img>
 			</ion-view>
