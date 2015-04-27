@@ -36,6 +36,19 @@
 			  </div>
 			  <img src="img/bk.jpg" width="600" height="475"></img>
 			</ion-view>
+			ion-view view-title="{{ category }}">
+  <ion-content>
+    <ion-list>
+      <div class="card" ng-repeat="dish in dishes">
+        <div class="item item-text-wrap">
+          {{ dish.title }}
+          <h4>{{dish.calories}}</h4>
+        </div>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
 		  </ion-tab>
 		   <ion-tab title="Snack">
 			<ion-view>
