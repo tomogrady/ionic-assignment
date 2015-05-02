@@ -83,14 +83,16 @@
 				</h1>
 				<div class="item item-button-left">
 				Calories
-				<!--button class="button button-royal"ng-click="Calories = Calories + 10" ng-init="count= (Breakfast + Lunch + Dinner) = Calories"-->
-				<button class="button button-royal"ng-click="Calories = Calories + 10" ng-init="Calories">
+				<!--<button class="button button-royal" ng-init="Calories= Breakfast + Lunch + Dinner" >-->
+				<button class="button button-royal"ng-click="Calories = Calories + 10" ng-init="Calories>
 				  <i class="icon ion-edit"></i>
 				  </button>
 				</but<span>
-                  Calories =: {{Dinner}} 
-				  
-				 <!-- Calories =: {{Calories}} -->
+                  <!--Calories =: {{Calories + Breakfast + Lunch + Dinner}}-->
+				<!-- Calories =: {{Breakfast  + Lunch + Dinner}}-->
+				 
+				<!-- Breakfast + Lunch + Dinner =: {{Calories}}-->
+				Calories =: {{Calories}}  
 
 				  
                  </span>
@@ -105,8 +107,7 @@
 	</ion-nav-view><div ng-controller="Main">
   <input type="text" ng-model="rootFolders">
 </div>
-	
-	
+ 	
   </body>
 			 
 </html>
